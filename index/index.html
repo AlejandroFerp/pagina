@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Logotipo" class="logo">
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="column left-column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+        </div>
+        <div class="column right-column">
+            <form class="form">
+                <label for="email">Nombre:</label>
+                <input type="email" id="email" placeholder="Escribe tu correo electrónico" required autofocus>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" required>
+
+                <label for="phone">Teléfono móvil:</label>
+                <input type="tel" id="phone" pattern="[0-9]{9}" placeholder="123456789" required>
+
+                <label for="birthdate">Fecha de nacimiento:</label>
+                <input type="date" id="birthdate">
+
+                <label>
+                    <input type="checkbox" id="remember-password">
+                    Recordar contraseña
+                </label>
+
+                <button type="submit" class="submit-button">
+                    Dar de alta
+                    <span class="tooltip">Entra y descubre</span>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Nombre del Alumno</p>
+    </footer>
+</body>
+</html>
